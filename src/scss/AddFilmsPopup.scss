@@ -1,0 +1,22 @@
+@import "variables";
+
+.addFilmForm{
+    color: $grey;
+}
+
+.inputInst{
+    display: flex;
+    flex-direction: row;
+}
+
+.addInput{
+    border-radius: 5px;
+    border: 2px solid $lightGrey;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 20px;
+    &:focus {
+      border: 2px solid $blue;
+    }
+}

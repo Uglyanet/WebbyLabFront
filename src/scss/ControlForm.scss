@@ -1,0 +1,104 @@
+@import "variables";
+
+.searchInput {
+  border-radius: 5px;
+  border: 2px solid $lightGrey;
+  padding: 15px 20px;
+  width: 100%;
+  height: 20px;
+  &:focus {
+    border: 2px solid $blue;
+  }
+}
+
+.controlForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sortingButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sortingButtons p {
+  align-self: center;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $blue;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  border: 2px solid $lightGrey;
+  height: fit-content;
+  width: auto;
+  &:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+.up {
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.down {
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.searchOptionText {
+  text-align: center;
+  font-weight: bold;
+}
+
+label {
+  color: lighten($grey, 40%);
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: white;
+  background: $blue;
+}
+
+label + input[type="radio"] + label {
+  border-left: 3px solid white;
+}
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid white;
+  padding: 0px;
+  height: 30px;
+  width: 275px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}

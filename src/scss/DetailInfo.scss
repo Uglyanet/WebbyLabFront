@@ -1,0 +1,59 @@
+@import "variables";
+
+.listOfStars {
+  display: flex;
+  flex-direction: column;
+}
+
+.actorLink {
+  color: $grey;
+  &:active {
+    color: $blue;
+  }
+  &:hover {
+    font-weight: bold;
+  }
+  &:visited {
+    color: lighten($grey, 40%);
+  }
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonRight {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $blue;
+  padding: 20px;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  border: 1px solid white;
+  height: fit-content;
+  width: auto;
+  &:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+.buttonLeft {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $blue;
+  padding: 20px;
+  border-radius: 5px 0px 0px 5px;
+  display: flex;
+  border: 1px solid white;
+  border-right: 0px;
+  height: fit-content;
+  width: auto;
+  &:hover {
+    background-color: red;
+  }
+}

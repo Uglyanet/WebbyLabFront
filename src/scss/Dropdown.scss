@@ -1,0 +1,41 @@
+@import "variables";
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.display {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 2px solid $lightGrey;
+  border-bottom: none;
+  background-color: $blue;
+  color: white;
+  display: flex;
+  padding-left: 20px;
+  width: 194px;
+  height: 50px;
+}
+
+.dropdown_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_button {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 2px solid $blue;
+  border-top: none;
+  background-color: $lightGrey;
+  box-shadow: 0 0 10px $grey;
+  color: $grey;
+  display: flex;
+  padding-left: 20px;
+  width: 194px;
+  height: 50px;
+}

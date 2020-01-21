@@ -39,7 +39,7 @@ const AddFilmsPopup = ({ films, forceRerender, setForceRerender }) => {
     }
 
     const handlAdd = () => {
-        axios.post(`http://ec2-18-185-132-63.eu-central-1.compute.amazonaws.com:4000/api/films`, {
+        axios.post(`http://localhost:4000/api/films`, {
             title: title,
             release_year: release_year,
             format: format,

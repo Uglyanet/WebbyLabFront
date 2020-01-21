@@ -20,7 +20,7 @@ const ListOfFilms = ({ films, setFilms, forceRerender, setForceRerender, searchL
     }
 
     useEffect(() => {
-        axios.get('http://ec2-18-185-132-63.eu-central-1.compute.amazonaws.com:4000/api/films')
+        axios.get('http://localhost:4000/api/films')
             .then(res => {
                 console.log(res);
                 setFilms(res.data);
@@ -32,7 +32,7 @@ const ListOfFilms = ({ films, setFilms, forceRerender, setForceRerender, searchL
 
     const handleDelete = (id) => {
         films.splice(films.findIndex(item => item._id === id), 1);
-        axios.delete(`http://ec2-18-185-132-63.eu-central-1.compute.amazonaws.com:4000/api/films/${id}`)
+        axios.delete(`http://localhost:4000/api/films/${id}`)
         setForceRerender(!forceRerender);
         console.log(films);
     }

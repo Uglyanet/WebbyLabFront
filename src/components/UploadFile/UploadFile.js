@@ -49,7 +49,7 @@ const UploadFile = ({films}) => {
 
     const postFilms = (i) => {
         if (films.filter(film => (film.title !== titles[i]) || (Number(film.release_year) !== Number(releaseYears[i])) || (film.format !== formats[i]) || (compareArray(i, film))).length === films.length) {
-            axios.post(`http://ec2-18-185-132-63.eu-central-1.compute.amazonaws.com:4000/api/films`, {
+            axios.post(`http://localhost:4000/api/films`, {
                 title: titles[i],
                 release_year: Number(releaseYears[i]),
                 format: formats[i],
